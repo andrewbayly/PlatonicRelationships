@@ -2,7 +2,7 @@
 
 [LIVE DEMO](https://andrewbayly.github.io/PlatonicRelationships/pr.html "Live Demo")
 
-Platonic Relationships is a visualization of the relationships between the Plnatonic ( and Archimedean ) polyhedra. To use the tool, start with Symmetry - either tetrahedral, octahedral or icosahedral, this selection determines the primary triangle used to build the polyhedron. Next, sliders for A and B move a single point within the primary triangle. The remainder of the points (vertices) appear as reflections of the initial point in the edges of the triangle. Lastly, snub tells the generator to use every second reflected point instead of every point.   
+Platonic Relationships is a visualization of the relationships between the Platonic ( and Archimedean ) polyhedra. To use the tool, start with Symmetry - either tetrahedral, octahedral or icosahedral, this selection determines the primary triangle used to build the polyhedron. Next, sliders for A and B move a single point within the primary triangle. The remainder of the points (vertices) appear as reflections of the initial point in the edges of the triangle. Lastly, snub tells the generator to use every second reflected point instead of every point.   
 
 See the table below for the settings and the polyhedron generated. 
 
