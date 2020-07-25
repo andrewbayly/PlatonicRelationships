@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset=utf-8>
-		<title>Platonic Relationships</title>
-		<style>
-			body { margin: 0; }
-		</style>
-	</head>
-	<body>
-		<script src="three.min.js"></script>
-
-		<script src="TrackballControls.js"></script>
-
-        <script src="dat.gui.min.js"></script>
-
-		<script>
+		
 
 var WIDTH = 1280,
 	HEIGHT = 720;
@@ -90,48 +74,6 @@ function MPoly(O, A, B) {
     //this.snubPoly = this.snub(); 
   }  
 } 
-
-//creates an MPoly
-/*
-MPoly.prototype.create = function(type){ 
-
-  this.Vertex = [];  
-  this.MVertex = []; 
-  this.Edge = [];  
-
-  this.addVertex(0, 0, 0);  
-  this.addVertex(0, 0, -100);  
-  this.addVertex(100, 0, 0);  
-  this.addVertex(0, 0, 100);  
-  this.addVertex(-100, 0, 0);  
-
-if(type == 0) {
-  this.addMVertex(0, 1, 2);  //POINT
-  this.addMVertex(0, 4, 3); 
-}
-else if(type == 1){
-  this.addMVertex(0, 2, 3);  //POINT
-  this.addMVertex(0, 1, 4); 
-}  
-else{
-  this.addMVertex(1, 2, 0);  //POINT
-  this.addMVertex(3, 4, 0); 
-}  
-
-  this.addEdge(0, 1);        //LINE
-
-
-  this.POINTS = []; 
-  for(var i = 0; i < this.MVertex.length; i++){ 
-    this.POINTS.push(addSphere()); 
-  }
-
-  this.LINES = []; 
-  for(var i = 0; i < this.Edge.length; i++){ 
-    this.LINES.push(addCylinder());  
-  }
-}
-*/
 
 MPoly.prototype.create = function(O, A, B){
 
@@ -846,85 +788,8 @@ var animate = function() {
 	render();
 };
 
- 
-//render();  
 animate();
 
-/**
-TODO: 
-- PROTOTYPE - make a tetrahedron
-  - create cylinders and move them around! - DONE!
-  - create edges as cylinders so that we can have a tetra-hedron - DONE!
-  - write function which transforms an edge into the right location between two points. DONE!
-  - make a tetrahedron! - DONE
-- make an MPoly, with Vertex, MVertex, and Edge arrays. - DONE
-- display three prototype MPoly's and switch between them. - DONE!
-- create Matrix classes
-  - Matrix - DONE
-    - Rotation Matrix - DONE
-    - Reflection Matrix - DONE
-    - Combine Matrix with another Matrix
-  - Vector - DONE
-    - Apply Matrix - DONE
-  - reflect vector X in plane made by vectors P and Q - DONE!
-  - normalize a vector ( to length 1 ) - DONE
-  
-- write MPoly generator - takes three Vertices, and generates an MPoly - DONE
-- create primary triangles for: - DONE!
-  - tetrahedral - DONE!
-  - octahedral - DONE!
-  - icosahedral - DONE!
-- create proper MPolys for three symmetries. - DONE! 
-- create MPoly generator for snub MPoly's
-- create 3 additional (snub) MPoly's
-- integrate snub MPoly's into the visualizer
-
-- tune width of bars so we can see the solids more clearly - DONE!
-
-**/
 
 
-/*
-var m = new Matrix(); 
-m.dump(); 
-
-var v = new Vector(0, 0, 1); 
-v.dump(); 
-
-m.setReflectZ(); 
-m.dump(); 
-
-v.apply(m); 
-v.dump(); 
-
-v = new Vector(1, 1, 1); 
-m.setRotateX(Math.PI / 2); 
-v.apply(m); 
-v.dump(); 
-
-m.setRotateY(Math.PI / 2); 
-v.apply(m);
-v.dump();
-
-m.setRotateZ(Math.PI / 2); 
-v.apply(m);
-v.dump();
-
-v = new Vector(1, 1, 1); 
-var P = new Vector(-1, 1, 1); 
-var Q = new Vector(0, 1, 0);
-v.reflect(P, Q); 
-v.dump();  
-*/
-
-/*
-var v = new Vector(1, 1, 1); 
-v.dump(); 
-
-v.normalize(); 
-v.dump(); 
-*/
 		
-		</script>
-	</body>
-</html>

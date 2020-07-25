@@ -1,0 +1,41 @@
+
+TODO: 
+- PROTOTYPE - make a tetrahedron
+  - create cylinders and move them around! - DONE!
+  - create edges as cylinders so that we can have a tetra-hedron - DONE!
+  - write function which transforms an edge into the right location between two points. DONE!
+  - make a tetrahedron! - DONE
+- make an MPoly, with Vertex, MVertex, and Edge arrays. - DONE
+- display three prototype MPoly's and switch between them. - DONE!
+- create Matrix classes
+  - Matrix - DONE
+    - Rotation Matrix - DONE
+    - Reflection Matrix - DONE
+    - Combine Matrix with another Matrix
+  - Vector - DONE
+    - Apply Matrix - DONE
+  - reflect vector X in plane made by vectors P and Q - DONE!
+  - normalize a vector ( to length 1 ) - DONE
+  
+- write MPoly generator - takes three Vertices, and generates an MPoly - DONE
+- create primary triangles for: - DONE!
+  - tetrahedral - DONE!
+  - octahedral - DONE!
+  - icosahedral - DONE!
+- create proper MPolys for three symmetries. - DONE! 
+- create MPoly generator for snub MPoly's
+- create 3 additional (snub) MPoly's
+- integrate snub MPoly's into the visualizer
+
+- tune width of bars so we can see the solids more clearly - DONE!
+
+- re-org the code: 
+  - pop out 
+     MPoly
+     Vector 
+     Matrix
+  - change pr to index
+  - move 3rd party dependencies into lib directory
+  - move this list into TODO.txt
+  - tidy up and add doco
+- add tests for Matrix and Vector  
